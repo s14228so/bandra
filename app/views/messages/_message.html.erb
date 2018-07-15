@@ -1,0 +1,37 @@
+<!-- patial just render single message -->
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2 text-center row-space-1">
+                
+                <br>
+                <%if !@user == @current_user %>
+               
+
+
+                <strong><%= message.user.nickname %></strong>
+      
+
+                <% else %>
+             <div class="color-val">
+
+                <strong><%= message.user.nickname %></strong>
+            </div>
+
+                <% end %>
+
+
+                
+
+            </div>
+
+            <div class="col-md-8">
+                <%= message.body %>
+            </div>
+
+            <div class="col-md-2">
+                <span class="pull-right"><%= message.message_time %></span> 
+            </div>
+        </div>
+    </div>
+</div>

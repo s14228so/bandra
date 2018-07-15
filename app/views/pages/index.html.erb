@@ -1,0 +1,104 @@
+
+
+
+<script type="text/javascript">
+  $(function(){
+    $(".navbar").removeClass("navbar-devise");
+    $(".navbar").addClass("navbar-default");
+  });
+</script>
+
+
+<div class="jumbotron">
+    <%= render 'partial/navbar' %>
+
+        <div class="container">
+         <div class="row">
+                     <div class="col-md-8 col-md-offset-2 text-center">
+                       <h1 class="display-3 people-1">バンド×主催者をつなぐマッチングアプリ </h1>
+
+                           <br>
+                           <br>
+
+                       
+                              <div class="search-tag">
+                                     <%= form_tag ivents_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
+                                           <p>
+                                             <%= text_field_tag :search, params[:search],placeholder:"バンド/イベントを検索" ,style:"color:black",id: "q" %>
+
+
+                                             <%= submit_tag "Search", :people_name => nil, style:"color:black", id:"r" %>
+                                            
+                                           </p>
+                                            <% end %>
+                              </div>
+                              <% if (!user_signed_in?) %>
+                              <div class="col-md-8 col-md-offset-2 button-top">
+       
+          <%=link_to "新規登録する", new_user_registration_path, class: "btn btn-primary btn-lg btn-1" %>
+
+        
+            <%=link_to "ログインする", new_user_session_path, class: "btn btn-success btn-lg btn-2" %>
+          </div>
+ <% end %>
+
+
+
+                     </div>
+
+         </div> 
+        </div>
+</div>
+
+
+
+
+
+
+        
+           
+            <%=render 'pages/concept' %>
+            <%=render 'pages/utilization'%>
+             <%=render 'pages/search' %>
+             <div class="footer-top">
+             <div class="col-md-8 col-md-offset-2">
+             
+              <ul>
+                <li>
+                  <%=link_to "TOP","#"%>
+
+                </li>
+                <li>
+                  <%=link_to "ABOUT","#"%>
+                  </li>
+                  <li>
+                   <%=link_to "NEWS","#"%>
+                  </li>
+                  <li>
+                    <%=link_to "CONTACT", contact_path%>
+                  </li>
+
+              </ul>
+             </div>
+           </div>
+          
+
+
+             <div class="footer">
+    
+             <div class="gradient-border" id="box">
+             
+              <p class="music_people">Music connects People</p>
+                
+              </div>
+              
+            </div>
+
+       
+
+
+
+
+
+
+

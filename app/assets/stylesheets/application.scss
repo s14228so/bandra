@@ -1,0 +1,780 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "toastr";
+@import "dropzone/dropzone";
+@import "font-awesome";
+
+
+
+.jumbotron {
+    padding-top: 0px;
+    // 背景画像を暗くする
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(cristian.jpg);
+  background-size: cover;
+  // 背景画像の位置を決める
+  background-position: 50% 50%;
+height:800px;
+}
+.jumbotron .container .row{
+    margin-top: 100px;
+    color: #fff;
+}
+
+
+.jumbotron h1{
+  
+
+  margin-top:100px;
+  
+  font-weight:200;
+}
+
+
+.search-tag p{
+  float:left;
+}
+#q{
+  height:50px;
+  width:600px;
+  display:block;
+  float:left;
+
+}
+q::selection{
+  
+
+color:black;
+}
+
+#r{
+  height:50px;
+  width:100px;
+   display:block;
+   float:left;
+
+}
+
+.people-1{
+  margin-top:40px;
+}
+
+.people-2{
+  margin-left:50px;
+}
+
+.people-3{
+
+}
+.listings{
+
+ float:left;
+   
+}
+
+.listing{
+    margin-right:20px;
+    margin-bottom:20px;
+  float:left;
+   width:250px;
+  height:100%;
+  background-color:white;
+}
+.listing-img{
+ display:block;
+ margin:0 auto;
+ margin-top:10px;
+}
+
+.listing-title{
+border-top: dotted 1px gray;
+text-align:center;
+padding:10px 0;
+}
+.carousel .item {
+  height: 100%;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+}
+
+
+.carousel{
+  height: 200px;
+  margin:auto;
+}
+
+/* 中略（ここに上で書いてるCSSが入っている） */
+
+@media (min-width: 320px) {
+  .carousel,
+  .carousel .item,
+  .carousel .item-mask,
+  .carousel-inner .item .item-mask img {
+    height:200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel,
+  .carousel .item,
+  .carousel .item-mask,
+  .carousel-inner .item .item-mask img {
+    height:400px;
+  }
+}
+
+
+
+.footer-top{
+  height:80px;
+
+
+}
+
+.footer-top li{
+  float:left;
+  list-style:none;
+  padding:0 80px;
+  line-hight:10px;
+
+
+}
+
+
+
+.footer-top a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  color:black;
+  padding-bottom:0px;
+   text-decoration: none;
+}
+.footer-top a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #2ecc71;
+  transition: .3s;
+}
+.footer-top a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-facebook{
+    color:#fff;
+    background-color:#4c66a4;
+}
+
+
+.btn-twitter{
+
+    color:#fff;
+    background-color:#00aced;
+       margin-left:10px;
+}
+
+
+
+.navbar-deafult .navbar-nav > li > a{
+    color: white;
+    font-size: 13px;
+}
+
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.jumbotron .container .row{
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.dropdown-menu  { 
+ 
+}
+
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+    z-index: 10;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 13px;
+}
+
+
+
+.bousen{
+  border-bottom:dotted 1px gray ;
+}
+.toukousya{
+  margin-left:20px;
+}
+.henshubtn{
+float:right;
+  margin-left:20px;
+}
+.navbar-devise{
+    background-color: #fff;
+    border-color: #fff;
+    z-index:10;
+}
+
+.navbar-devise .navbar-nav > li > a{
+color:#222222;
+font-size: 13px;
+    }
+
+.profile-0 {
+    width: 28px;
+    height: 28px;
+}
+
+.profile-1 {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-2{
+    width: 128px;
+    height: 128px;
+}
+
+.profile-3{
+  width:300px;
+  height:300px;
+}
+
+.profile-full {
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.concept{
+  height:400px;
+  float:left;
+  padding-top:50px;
+}
+
+.concept-title{
+  font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
+  font-size: 30px;
+    line-height: 48px;
+    display:inline-block;
+    background:linear-gradient(transparent 80%, #ffff66 60%);
+    letter-spacing: .04em;
+}
+
+.search-title{
+font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
+  font-size: 30px;
+    line-height: 48px;
+    display:inline-block;
+    background:linear-gradient(transparent 80%, #99cccc 60%);
+    letter-spacing: .04em;
+    margin-bottom:30px;
+  
+}
+.concept-text{
+  font-size:16px;
+  line-height:32px;
+  vertical-align:middle;
+  font-weight:normal;
+}
+
+.utilization-bg{
+
+
+ background-color:white;
+  
+}
+
+.concept-bg{
+background-color:#f6f6f6;
+ 
+
+}
+
+.search-bg{
+background-color:#f6f6f6;
+
+  
+}
+.utilization-title{
+font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
+  font-size: 30px;
+    line-height: 48px;
+    display:inline-block;
+  background:linear-gradient(transparent 80%, #F4B49C 60%);
+  letter-spacing: .04em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.search-ivent{
+  height:500px;
+}
+
+
+
+.utilization{
+  padding-bottom:150px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lessons{
+  float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lesson{
+  float:left;
+  margin-right:50px;
+ 
+}
+
+@media screen and (min-width: 960px) {
+.search-1{
+  margin-right:100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+ .lesson{
+ width:100%;
+ }
+ .utilization{
+ text-align:center;
+ height:100%;
+ }
+ .concept{
+ text-align:center;
+ padding:0 30px;
+  height:100%;
+
+ }
+ .search-ivent{
+ padding:10px 30px;
+  
+   height:100%;
+ }
+ 
+ .search-1{
+ text-align:center;
+ height:100%;
+ padding-bottom:30px;
+
+ }
+ .search-2{
+ text-align:center;
+ height:100%;
+padding-bottom:30px;
+
+ }
+}
+
+
+.btn-1{
+  margin-right:15px;
+}
+
+
+.button-top{
+  margin-top:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-list-alt{
+ font-size:30px;
+ padding:25px;
+}
+.fa-envelope{
+font-size:30px;
+ padding:25px;
+  
+}
+
+.fa-calendar{
+  font-size:30px;
+ padding:25px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  
+  background: none;
+  color: #86D1E8;
+}
+
+
+.navbar-devise .navbar-brand{
+    color: #222222;
+}
+
+// トップページのnavbarのドロップダウンがクリックされた時
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: #555;
+}
+
+
+// row-space類
+.row-space-top-0 {
+  margin-top: 0px;
+}
+
+.row-space-top-1 {
+  margin-top: 10px;
+}
+
+.row-space-top-2 {
+  margin-top: 15px;
+}
+
+.row-space-top-3 {
+  margin-top: 20px;
+}
+
+.row-space-top-4 {
+  margin-top: 25px;
+}
+
+.row-space-0 {
+  margin-bottom: 0px;
+}
+.row-space-1 {
+  margin-bottom: 10px;
+}
+
+.row-space-2 {
+  margin-bottom: 15px;
+}
+
+.row-space-3 {
+  margin-bottom: 20px;
+}
+
+.row-space-4 {
+    margin-bottom: 25px;
+}
+
+.user-profile{
+  margin-top:30px;
+}
+
+.vertifications{
+  margin-top:100px;
+}
+
+
+
+.color-val{
+  color:gray;
+}
+
+
+
+
+body{
+    color: #222;
+     background-color: #F8F8F8;
+}
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+#box {
+  display: flex;
+  align-items: center;
+
+
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+ 
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+  
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+  width:100%;
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+.music_people{
+  color:white;
+  
+}
+
+.footer{
+ 
+width:100%;
+
+}
+
+#box ul{
+
+
+
+ float:right;
+ padding-right:0px;
+
+  }
+#box li{
+  color:white;
+  font-size:10px;
+  padding:7px 0;
+  list-style:none;
+  
+
+  }
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

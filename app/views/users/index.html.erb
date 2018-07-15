@@ -1,0 +1,48 @@
+
+<%= render 'partial/navbar' %>
+
+<div class="container"> 
+    <div class="col-md-10 col-md-offset-1">
+
+                   <h3> ユーザー一覧</h3>
+                   <br>
+           <div class="listings">
+                 <% @users.each do |user| %>
+
+                      <div class="listing text-center">
+
+                          <%=image_tag "avatar-default.png" %>
+
+
+                             <br>
+                             <div class="lisiting-title">
+                            
+                                  <%if user.name%>
+                                        <%=link_to user_path(user) do%>
+                                            <%=user.name %>
+                                         <% end %>
+                                         <% else %>
+                                         <%=link_to user_path(user) do%>
+                                              <%=user.nickname %>
+                                         <% end %>
+                                   <% end %>
+                                 </div>
+                            
+                    </div>
+                <%end%>
+
+          </div>
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

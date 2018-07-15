@@ -1,0 +1,59 @@
+<%=render 'partial/navbar' %>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <div class="user-profile row-space-4 text-center">
+          <% if @user.image? %>
+
+          <%= image_tag @user.image, class: "profile-full img-circle profile-3" %>
+          <% else %>
+          <%= image_tag "avatar-default.png" %>
+          <% end %>
+          <br>
+          <%=@user.nickname%>
+
+        </div>
+        
+<!-- send message ボタン -->
+      <% if current_user != @user %>
+        <div class="row-space-2 text-center">
+          <%= link_to "メッセージを送る", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post',class: "btn btn-danger btn-full" %>
+        </div>
+      <% end %>
+
+        <div class="panel panel-default vertifications hidden-xs hidden-sm">
+              <div class="panel-heading">
+                認証ID
+              </div>
+              <div class="panel-body">
+                <div id="ver-name">
+                      <em>ユーザー名<em><br>
+                      <%if @user.name%>
+                       <%=@user.name%>
+                       <% else %>
+                       <%=@user.nickname%>
+                       <% end %>
+                    </div>
+                    <br>
+                    <div id="ver-email">
+                      <em>メールアドレス<em>
+                      <%=@user.email%>
+                    </div>
+                    <br>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-8 col-sm-12 ">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label>イベント一覧</label>
+          </div>
+           
+           </div>
+           </div>
+         </div>
+
+    </div>
+  </div>

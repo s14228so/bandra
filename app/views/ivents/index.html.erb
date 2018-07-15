@@ -1,0 +1,42 @@
+<%= render 'partial/navbar' %>
+
+<div class="container"> 
+    <div class="col-md-10 col-md-offset-1">
+        
+                   <h3> イベント一覧</h3>
+                   <br>
+           <div class="listings">
+           <% @ivents.each do |ivent| %>
+           
+            <div class="listing">
+              <%=link_to ivent_path(ivent) do %>
+                <%=image_tag "ivent.jpg" ,class: "listing-img profile-2 img-circle" %>
+            <% end %>
+
+              <br>
+              <div class="listing-title">
+              <%=link_to ivent_path(ivent) do %>
+
+              <%=ivent.ivent_title%>
+            </h4>
+
+              
+              <% end %>
+              @<%= ivent.address %>
+            </div>
+        
+             
+
+      
+              </div>
+             <% end %>
+           </div>
+             
+
+      </div>
+    </div>
+
+
+
+
+
