@@ -3,8 +3,6 @@ class ConversationsController < ApplicationController
 
     def index
       @users = User.all
-    
-
       # get all conversations involving current_user
       @conversations = Conversation.involving(current_user)
     end

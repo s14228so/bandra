@@ -12,12 +12,27 @@
                         <div class="panel-body panel-conversation">
                             <div class="row">
                                 <div class="col-md-2 text-center row-space-1">
+                                    <%=link_to user_path(other) do %>
+                       
+                         
+
+                                     <% if other.icons.present? %>
+
+                                       <%= image_tag other.icons[0].avatar.url() ,size: '80x80',class: "img-circle"%>
+                                    <% else %>
+                                      <%= image_tag 'avatar-default.png', size: '80x80'%>
+                                  <% end %>
+                                     <% end %>
+                                  <br>
+
                                    <% if current_user.provider.present? %>
 
                                      <%= current_user.nickname %>
                                    <% else %>
                                        <strong><%= other.nickname %></strong>
                                    <% end %>
+
+
 
                 
                                     

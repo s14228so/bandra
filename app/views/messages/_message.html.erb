@@ -3,6 +3,14 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-2 text-center row-space-1">
+                 <%= image_tag message.user.icons[0].avatar.url(), class: "img-circle profile-1" %>
+
+
+
+             
+
+
+
                 
                 <br>
                 <%if !@user == @current_user %>
@@ -35,3 +43,5 @@
         </div>
     </div>
 </div>
+
+

@@ -6,6 +6,9 @@ class MessagesController < ApplicationController
   # redirect_to this action from conversation controller create action
   def index
     # check if this current_user are involved in conversation
+ @messages =Message.all
+ @conversations = Conversation.all
+ 
     if current_user == @conversation.sender || current_user == @conversation.recipient
       @other = current_user == @conversation.sender ? @conversation.recipient : @conversation.sender
       @messages = @conversation.messages.order("created_at DESC")

@@ -14,7 +14,7 @@
                                <%=link_to user_path(@user) do%>
                                <%=@user.nickname %>
                                <% end%>
-                               <% end %>（プロフィルぺージへ
+                               <% end %>（プロフィルぺージへ)
                              </div>
             
           
@@ -25,6 +25,17 @@
 
                                 <%= @ivent.ivent_title %>
                                 </div>
+
+                                   <div class="show-gazo">
+                                <% if @ivent.photos.present? %>
+                                  
+                                       <%= image_tag @ivent.photos[0].image.url(:medium),class: "show-gazo" %>
+                                       
+                                    <% else %>
+                                      <%= image_tag 'ivent.jpg', class: "show-gazo" %>
+                                  <% end %>
+                                </div>
+
                                  <div class="panel-body bousen content-text">
                                  
                                   <strong>本文：</strong>
@@ -55,22 +66,51 @@
                                 
                                     <h5><%= @ivent.bandivent_mei %></h5>
                                   </div>
+                                
                                   <div class="panel-body bousen">
-                                   <strong> 選択：</strong>
+                                   <strong> ステータス：</strong>
                               
                               
                                     <h5><%= @ivent.select_people %></h5>
                                   </div>
-                                  <div class="henshubtn">
-                                  <%= link_to ivent_path(@ivent), method: :delete, data: {confirm: "Are you sure?"} do %>
+                                   <div class="panel-body bousen">
+                                    <% if current_user != @user %>
+                                    <div class="text-center">
+                                      <%= link_to "メッセージを送る", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post',class: "btn btn-danger" %>
+                                    </div>
+                                  <% end %>
+                                   </div>
 
-                                  <i class="fa fa-remove" aria-hidden="true"></i>
-                                  削除
+
+
+                                   <%= link_to ivents_path(@ivent) do%>
+                                 <i class="fa fa-caret-square-o-left"></i>戻る
                                   <%end%>
-                                  <%= link_to edit_ivent_path(@ivent) do%>
-                                  <i class="fa fa-edit" aria-hidden="true" ></i>編集
-                                  <%end%>
+
+
+
+
+                                 <% if current_user == @user %>
+
+                                  <div class="henshubtn">
+                                        <%= link_to ivent_path(@ivent), method: :delete, data: {confirm: "Are you sure?"} do %>
+
+                                        <i class="fa fa-remove" aria-hidden="true"></i>
+                                        削除
+                                        <%end%>
+
+
+                                        <%= link_to edit_ivent_path(@ivent) do%>
+                                        <i class="fa fa-edit" aria-hidden="true" ></i>編集
+                                        <%end%>
+                                         <%= link_to ivent_photos_path(@ivent) do%>
+                                        <i class="fa fa-edit" aria-hidden="true" ></i>画像追加
+                                        <%end%>
+                                  
+
+
                                 </div>
+                                <% end %>
                               
                    </div>
                   </div>

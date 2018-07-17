@@ -1,17 +1,23 @@
 class IventsController < ApplicationController
   before_action :authenticate_user!, only: [:update,:edit,:show]
   def new
-    
+
     @ivent = current_user.ivents.build
     
+
   end
   def index
-    @ivents = Ivent.search(params[:search])
+  
+     @q = Ivent.ransack(params[:q])
+    @ivents = @q.result(distinct: true)
+   
   end
 
   def show
     @ivent = Ivent.find(params[:id])
-    @user = current_user
+     @photos = @ivent.photos
+
+    @user = @ivent.user
   end
   def edit
      @ivent = Ivent.find(params[:id])
@@ -26,7 +32,7 @@ class IventsController < ApplicationController
   def create
     @ivent = current_user.ivents.build(ivent_params)
     if @ivent.save
-      redirect_to ivent_path(@ivent),notice: "イベント作成完了"
+      redirect_to ivent_photos_path(@ivent),notice: "イベント作成完了、画像を追加してください"
     else
       redirect_to new_ivent_path, notice:"作成できませんでした、イベント内容を確認してください"
   end
@@ -43,10 +49,27 @@ end
     @ivent = Ivent.find(params[:id])
   end
 
+
+
   private
   def ivent_params
-    params.require(:ivent).permit(:address,:ivent_title,:ivent_content,:music_type,:bandivent_mei,:select_people)
+    params.require(:ivent).permit(:address,:ivent_title,:ivent_content,:music_type,:bandivent_mei,:select_people,:image)
   end
 
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

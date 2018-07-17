@@ -1,5 +1,8 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "ログインはこちら", new_session_path(resource_name) %><br />
+  <%= link_to new_session_path(resource_name) do%>
+  <p class="login-white">ログインはこちら</p>
+  <br />
+  <% end %>
 <% end -%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>

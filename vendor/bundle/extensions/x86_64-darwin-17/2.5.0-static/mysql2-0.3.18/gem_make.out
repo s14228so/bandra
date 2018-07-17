@@ -1,0 +1,199 @@
+current directory: /Users/satoshi/workspace/bandra/vendor/bundle/gems/mysql2-0.3.18/ext/mysql2
+/Users/satoshi/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20180716-39338-jm0ymw.rb extconf.rb
+checking for ruby/thread.h... yes
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_wait_for_single_fd()... yes
+checking for rb_hash_dup()... yes
+checking for rb_intern3()... yes
+-----
+Using mysql_config at /usr/local/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for mysqld_error.h... yes
+-----
+Setting rpath to /usr/local/Cellar/mysql/8.0.11/lib
+-----
+creating Makefile
+
+current directory: /Users/satoshi/workspace/bandra/vendor/bundle/gems/mysql2-0.3.18/ext/mysql2
+make "DESTDIR=" clean
+
+current directory: /Users/satoshi/workspace/bandra/vendor/bundle/gems/mysql2-0.3.18/ext/mysql2
+make "DESTDIR="
+compiling client.c
+client.c:431:3: error: use of undeclared identifier 'my_bool'
+  my_bool res = mysql_read_query_result(client);
+  ^
+client.c:433:19: error: use of undeclared identifier 'res'
+  return (void *)(res == 0 ? Qtrue : Qfalse);
+                  ^
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2202:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2207:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:658:7: warning: division by zero is undefined [-Wdivision-by-zero]
+  if (rb_scan_args(argc, argv, "11", &args.sql, &opts) == 2) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 5 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/satoshi/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:762:3: error: use of undeclared identifier 'my_bool'
+  my_bool boolval;
+  ^
+client.c:793:7: error: use of undeclared identifier 'boolval'
+      boolval = (value == Qfalse ? 0 : 1);
+      ^
+client.c:794:17: error: use of undeclared identifier 'boolval'
+      retval = &boolval;
+                ^
+client.c:797:10: error: use of undeclared identifier 'MYSQL_SECURE_AUTH'; did you mean 'MYSQL_DEFAULT_AUTH'?
+    case MYSQL_SECURE_AUTH:
+         ^~~~~~~~~~~~~~~~~
+         MYSQL_DEFAULT_AUTH
+/usr/local/Cellar/mysql/8.0.11/include/mysql/mysql.h:188:3: note: 'MYSQL_DEFAULT_AUTH' declared here
+  MYSQL_DEFAULT_AUTH,
+  ^
+client.c:798:7: error: use of undeclared identifier 'boolval'
+      boolval = (value == Qfalse ? 0 : 1);
+      ^
+client.c:799:17: error: use of undeclared identifier 'boolval'
+      retval = &boolval;
+                ^
+client.c:830:38: error: use of undeclared identifier 'boolval'
+        wrapper->reconnect_enabled = boolval;
+                                     ^
+client.c:1196:38: error: use of undeclared identifier 'MYSQL_SECURE_AUTH'; did you mean 'MYSQL_DEFAULT_AUTH'?
+  return _mysql_client_options(self, MYSQL_SECURE_AUTH, value);
+                                     ^~~~~~~~~~~~~~~~~
+                                     MYSQL_DEFAULT_AUTH
+/usr/local/Cellar/mysql/8.0.11/include/mysql/mysql.h:188:3: note: 'MYSQL_DEFAULT_AUTH' declared here
+  MYSQL_DEFAULT_AUTH,
+  ^
+6 warnings and 10 errors generated.
+make: *** [client.o] Error 1
+
+make failed, exit code 2

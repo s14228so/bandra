@@ -4,14 +4,32 @@
     <div class="row">
       <div class="col-lg-3 col-md-4">
         <div class="user-profile row-space-4 text-center">
-          <% if @user.image? %>
+          <% if @user.icons.present? %>
+         
+           
 
-          <%= image_tag @user.image, class: "profile-full img-circle profile-3" %>
-          <% else %>
-          <%= image_tag "avatar-default.png" %>
-          <% end %>
+                                       <%= image_tag @user.icons[0].avatar.url() ,size: '150x150',class: "img-circle"%>
+                                       
+                                    <% else %>
+                                    <% if @user == current_user %>
+                                     <%=link_to user_icons_path(@user) do %>
+
+           
+                                      <%= image_tag 'avatar-default.png', size: '150x150'%>
+                                      <% end %>
+
+                                      <%else %>
+                                       <%= image_tag 'avatar-default.png', size: '150x150'%>
+                                       <% end %>
+                                      
+                                  <% end %>
           <br>
           <%=@user.nickname%>
+          <%if current_user == @user %>
+          <%=link_to edit_user_path(current_user) do %>
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <% end %>
+          <% end %>
 
         </div>
         
@@ -43,13 +61,39 @@
                     <br>
               </div>
         </div>
+      
+
       </div>
 
-      <div class="col-lg-6 col-md-8 col-sm-12 ">
+      <div class="user-text col-lg-6 col-md-8 col-sm-12 ">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <label>イベント一覧</label>
+            <label>ユーザープロフィール</label>
           </div>
+           <div class="panel-body profile">
+             <label>自己紹介</label>
+            <%=@user.profile %>
+          </div>
+           <div class="panel-body profile">
+             <label>年齢</label>
+            <%=@user.user_age %>
+          </div>
+          <div class="panel-body profile">
+             <label>性別</label>
+            <%=@user.gender %>
+          </div>
+           <div class="panel-body profile">
+             <label>活動地域</label>
+            <%=@user.basyo %>
+          </div>
+           <div class="panel-body profile">
+             <label>ステータス</label>
+            <%=@user.bandor %>
+          </div>
+
+         
+
+
            
            </div>
            </div>

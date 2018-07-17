@@ -4,9 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
   has_many :ivents
-
-   has_attached_file :image, :styles => { :medium => "400x400", :thumb => "100x100>" }, :default_url => "avatar-default.png"
-  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+  has_many :icons
 
 
   def self.from_omniauth(auth)

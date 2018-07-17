@@ -3,53 +3,37 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2 search-ivent ">
       <h2 class="search-title">Search</h2><br>
-               <div class="col-md-4 search-1">
+               <div class="col-md-4 col-sm-10 search-1">
                     <h3>イベントを探す</h3>
-                    <p>キーワードで検索</p>
+                    
+                    <%= search_form_for @q do |f| %>
+                    <div class="search-2">
 
-                     <%= form_tag ivents_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
-                       <p>
-                         <%= text_field_tag :search, params[:search] %>
-                         <%= submit_tag "Search", :ivent_title => nil %>
-                       </p>
+                    
+                       
+                        <p>タイトルで検索</p>
+                         <%= f.search_field :ivent_title_start %>
+                         <%= f.submit %>
+                       </div>
+                       
+
+
+
+
+                      
+                       <div class="search-3">
+
+                          <p>ジャンルで検索</p>
+                         <%= f.search_field :music_type_start %>
+                         <%= f.submit %>
+                       
                         <% end %>
-                        <p>ジャンルで絞り込む</p>
-                       <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ロック" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ハードメタル" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ポップス" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ヴィジュアル" %>
-
-                         
-               </div>
-                <div class="col-md-4 search-2">
-                          <h3>出演者を探す</h3>
-                          <p>キーワードで検索</p>
-
-
-
-                    <%= form_tag ivents_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
-                       <p>
-                         <%= text_field_tag :search, params[:search] %>
-                         <%= submit_tag "Search", :people_name => nil %>
-                       </p>
-                        <% end %>
-                        <p>ジャンルで絞り込む</p>
-                       <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ロック" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ハードメタル" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ポップス" %><br>
-                      <%= check_box_tag :sample %>
-                      <%= label_tag :sample, "ヴィジュアル" %>
+                      </div>
+                        
 
                   </div>
                
-        </div>
+    </div>
   </div>
 </div>
 </div>

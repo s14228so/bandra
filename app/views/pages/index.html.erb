@@ -15,36 +15,86 @@
         <div class="container">
          <div class="row">
                      <div class="col-md-8 col-md-offset-2 text-center">
-                       <h1 class="display-3 people-1">バンド×主催者をつなぐマッチングアプリ </h1>
+                       <h1 class="display-3 people-1">Bandra</h1>
+                       <p>Music connects People</p>
+
+
 
                            <br>
-                           <br>
+                          
 
                        
-                              <div class="search-tag">
-                                     <%= form_tag ivents_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
+                  
+
+
+                                 <div class="search-tag">
+                                <%= search_form_for @q do |f| %>
+                                   <%#　projects_pathはモデル名で読みかえること %>
                                            <p>
-                                             <%= text_field_tag :search, params[:search],placeholder:"バンド/イベントを検索" ,style:"color:black",id: "q" %>
+                                               <%= f.search_field :ivent_title_or_address_cont,placeholder:"バンド/イベントを検索" ,style:"color:black",id: "q" %>
 
+                                             <%= submit_tag "Search", style:"color:black", id:"r" %>
+                                              <br />
 
-                                             <%= submit_tag "Search", :people_name => nil, style:"color:black", id:"r" %>
-                                            
                                            </p>
                                             <% end %>
+
                               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                               <% if (!user_signed_in?) %>
                               <div class="col-md-8 col-md-offset-2 button-top">
        
-          <%=link_to "新規登録する", new_user_registration_path, class: "btn btn-primary btn-lg btn-1" %>
+                                      <%=link_to "新規登録する", new_user_registration_path, class: "btn btn-primary btn-lg btn-1" %>
 
-        
-            <%=link_to "ログインする", new_user_session_path, class: "btn btn-success btn-lg btn-2" %>
-          </div>
- <% end %>
+                                    
+                                        <%=link_to "ログインする", new_user_session_path, class: "btn btn-success btn-lg btn-2" %>
+                                      </div>
+                             <% end %>
+
+<div class="scroll_button_btm">
+    <a href="#page-bottom"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+</div>
 
 
+</script>
+<script type="text/javascript">
+$(function(){
+    $("a[href^=#page-bottom]").click(function(){
+        $('html, body').animate({
+          scrollTop: $(document).height()
+        },1500);
+        return false;
+    });
+});
+</script>
 
-                     </div>
+
+                    </div>
 
          </div> 
         </div>
@@ -79,8 +129,16 @@
                   </li>
 
               </ul>
+              <br>
+            
              </div>
            </div>
+           <div class="sns-icon">
+            <%=link_to "#" do %>
+           <i class="fa fa-twitter my-twitter" aria-hidden="true"></i>
+           <i class="fa fa-facebook-square my-facebook" aria-hidden="true"></i>
+           <% end %>
+         </div>
           
 
 
@@ -88,7 +146,7 @@
     
              <div class="gradient-border" id="box">
              
-              <p class="music_people">Music connects People</p>
+              <p class="music_people"> <%=link_to "Music connects People","/" %></p>
                 
               </div>
               
@@ -99,6 +157,20 @@
 
 
 
-
+<!-- jquery読み込み -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<!-- スクロール -->
+<script type="text/javascript">
+$(function(){
+    $("a[href^=#]").click(function(){
+    var speed = 1200;
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == ""?"html" : href);
+    var position = target.offset().top;
+ 
+    $("body, html").animate({scrollTop:position}, speed, "swing");
+    return false;
+    });
+});
 
 

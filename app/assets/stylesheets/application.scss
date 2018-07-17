@@ -10,23 +10,96 @@
 .jumbotron {
     padding-top: 0px;
     // 背景画像を暗くする
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(cristian.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(cristian.jpg);
   background-size: cover;
   // 背景画像の位置を決める
   background-position: 50% 50%;
 height:800px;
+   border-radius:0 0 20px 20px;
 }
 .jumbotron .container .row{
     margin-top: 100px;
     color: #fff;
+
 }
 
 
+// dropzone.jsのcss
+@media (max-width: 768px){
+  .dz-preview, .dz-processing, .dz-image-preview, .dz-error, .dz-complete {
+      margin: 10px 0!important;
+      width: 100%;
+  }
+  .dropzone .dz-preview .dz-image {
+    width: 100%;   
+  }
+  .dropzone .dz-preview .dz-image img {
+    height: 120px;    
+  }
+}
+
+.dropzone .dz-preview .dz-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.dropzone.dz-started .dz-message {
+  display: block;
+}
+
+#pagejump_demo .scroll_button a{
+    position: fixed;
+    display: block;
+    right:50px;
+    bottom:50px;
+    background: #313131;
+    color:#fff;
+    padding:20px;
+}
+
+
+#pagejump_demo .scroll_button_btm a{
+    position: fixed;
+    display: block;
+    right:50px;
+    top:50px;
+    background: #313131;
+    color:#fff;
+    padding:20px;
+}
+
+
+.scroll_button_btm{
+   display:block;
+  margin:0 auto;
+  text-align:center;
+  margin-top:300px;
+
+}
+
+.scroll_button_btm a{
+  text-decoration:none;
+}
+
+
+.fa-angle-double-down{
+   font-size:50px;
+  display:block;
+  margin:0 auto;
+  color:white;
+  text-decoration:none;
+}
+.fa-angle-double-up{
+  
+  font-size:50px;
+  display:block;
+  margin:0 auto;
+}
 .jumbotron h1{
   
 
   margin-top:100px;
-  
+  font-size:85px;
   font-weight:200;
 }
 
@@ -57,6 +130,7 @@ color:black;
 
 .people-1{
   margin-top:40px;
+
 }
 
 .people-2{
@@ -71,28 +145,52 @@ color:black;
  float:left;
    
 }
+.show-gazo{
+  width:100%;
+  height:300px;
+}
 
+
+.form-profile{
+  height:300px;
+  width:100%;
+}
+
+.prof{
+  height:500px;
+}
+.shinki-bg{
+ 
+}
+.index-search{
+  padding-bottom:30px;
+}
 .listing{
-    margin-right:20px;
-    margin-bottom:20px;
+    margin-right:40px;
+    margin-bottom:40px;
   float:left;
    width:250px;
   height:100%;
   background-color:white;
+border-radius: 8px;
 }
 .listing-img{
- display:block;
- margin:0 auto;
- margin-top:10px;
+
+ border-radius: 8px 8px 0 0;
 }
 
 .listing-title{
-border-top: dotted 1px gray;
-text-align:center;
-padding:10px 0;
+
+margin-left:10px;
+
+padding-bottom:10px;
+border-radius: 8px;
 }
 .carousel .item {
   height: 100%;
+}
+.listing-title a{
+  color:black;
 }
 
 .carousel img {
@@ -126,6 +224,25 @@ padding:10px 0;
   }
 }
 
+.user-text{
+  margin-top:20px;
+}
+
+.users-list{
+    margin-right:40px;
+    margin-bottom:40px;
+    padding-top:10px;
+  float:left;
+   width:250px;
+  height:100%;
+  background-color:white;
+border-radius: 8px;
+}
+
+
+.users-name a{
+  color:black;
+}
 
 
 .footer-top{
@@ -138,7 +255,7 @@ padding:10px 0;
   float:left;
   list-style:none;
   padding:0 80px;
-  line-hight:10px;
+  line-height:80px;
 
 
 }
@@ -489,15 +606,17 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 
 
 
+// タブレット用
+@media screen and (max-width: 768px){
+  
+}
 
 
 
 
 
 
-
-
-
+// スマホ用
 @media screen and (max-width: 480px) {
  .lesson{
  width:100%;
@@ -505,6 +624,18 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
  .utilization{
  text-align:center;
  height:100%;
+ }
+.search-tag p{
+  margin-bottom:50px;
+}
+ #q{
+ width:355px;
+ }
+.footer-top{
+  display:none;
+}
+ #r{
+ float:right;
  }
  .concept{
  text-align:center;
@@ -522,14 +653,16 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
  text-align:center;
  height:100%;
  padding-bottom:30px;
-
  }
- .search-2{
- text-align:center;
- height:100%;
-padding-bottom:30px;
 
- }
+.search-2{
+  padding-bottom:30px;
+}
+
+
+.search-3{
+   padding-bottom:30px;
+}
 }
 
 
@@ -663,9 +796,6 @@ font-size:30px;
   margin-bottom: 15px;
 }
 
-.row-space-3 {
-  margin-bottom: 20px;
-}
 
 .row-space-4 {
     margin-bottom: 25px;
@@ -717,6 +847,7 @@ body{
   font-size: 2.5rem;
   
 }
+
 .gradient-border {
   --borderWidth: 3px;
   background: #1D1F20;
@@ -738,10 +869,18 @@ body{
   background-size: 300% 300%;
 }
 
-.music_people{
+
+
+
+
+.music_people a{
   color:white;
+  text-decoration:none;
   
 }
+
+
+
 
 .footer{
  
@@ -778,3 +917,171 @@ width:100%;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-regist{
+  padding:30px 0;
+}
+
+
+
+.login-white{
+  color:white;
+}
+
+.login-white a{
+   text-decoration: none;
+}
+
+
+.bg-regist{
+   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(ivent.jpg);
+  background-size: cover;
+  // 背景画像の位置を決める
+  background-position: 50% 50%;
+  width:100%;
+height:800px;
+color:white;
+}
+
+
+
+
+
+
+
+
+.album {
+  margin: auto;
+ 
+  position: relative;
+}
+
+.album img {
+
+  width: 1425px;
+  animation-name: album;
+  -webkit-animation-name: album;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.album .img1 {
+  display: block;
+  margin: 0 auto;
+}
+
+.album .img2 {
+  animation-delay:5s;
+  -webkit-animation-delay:5s;
+  position: absolute;
+  top: 0;
+  
+}
+
+@keyframes album {
+  0% {
+    opacity: 0;
+  }
+  
+  12.5% {
+    opacity: 1;
+  }
+
+  37.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes album {
+  0% {
+    opacity: 0;
+  }
+  
+  12.5% {
+    opacity: 1;
+  }
+
+  37.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+.sns-icon{
+  float:right;
+  margin-right:50px;
+  margin-bottom:20px;
+  color:f099;
+}
+
+
+.fa-facebook-square{
+   font-size:30px;
+}
+
+.my-twitter{
+
+color: #1DA1F2;
+}
+.my-facebook{
+  color: #3B5998;
+}
+
+.fa-twitter{
+  font-size:30px;
+  margin-right:10px;
+  color:f099;
+}

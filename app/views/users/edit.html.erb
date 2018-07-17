@@ -1,0 +1,89 @@
+
+<%= render 'partial/navbar' %>
+
+<div class="container"> 
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <%=form_for @user do |f| %>
+    
+ <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h3> プロフィール編集</h3>
+                   </div>
+                   <div class="row">
+              <div class="col-md-12 select">
+                     <div class="panel-body">
+                          <label>自己紹介</label>
+                         <%=f.text_area :profile,{required: 'true', placeholder:"自己アピールしよう！",autofocus: 'true', class: 'form-profile'}%>
+                      </div>
+                    </div>
+                  </div>
+            
+                  
+
+
+                  <div class="row">
+              <div class="col-md-12 select">
+
+               <div class="panel-body">
+                         <label>年齢</label>
+                      <%=f.text_field :user_age,{required: 'true', placeholder:"25歳",autofocus: 'true', class: 'form-control'}%>
+                      </div>
+
+                   </div>
+                 </div>
+          
+
+
+                       <div class="row">
+              <div class="col-md-12 select">
+                    <div class="panel-body">
+                         <label>性別</label>
+                      <%=f.select :gender,[["男性","男性"],["女性","女性"]], {prompt:"選択してください"}, {required: 'true', autofocus: 'true', class: 'form-control'} %>
+
+                   </div>
+                 </div>
+               </div>
+           
+
+
+                       <div class="row">
+              <div class="col-md-12 select">
+                    <div class="panel-body">
+                         <label>活動地域</label>
+                      <%=f.text_field :basyo,{required: 'true', placeholder:"渋谷" ,autofocus: 'true', class: 'form-control'} %>
+                   </div>
+                      </div>
+                    </div>
+               
+
+
+                       <div class="row">
+              <div class="col-md-12 select">
+                    <div class="panel-body">
+                      <label>ステータス</label>
+                      <%=f.select :bandor,[["出演者","出演者"],["主催者","主催者"]], {prompt:"選択してください"}, {required: 'true', autofocus: 'true', class: 'form-control'} %>
+                   </div>
+                 </div>
+               </div>
+
+          
+                  
+
+
+
+
+                   <div class="actions">
+              <%= f.submit "更新する", class: "btn btn-warning" %>
+            </div>
+                   <% end %>
+                   <%=link_to "プロフィール画像を追加する",user_icons_path(@user) %>
+           
+                  </div>
+
+   </div>
+
+</div>
+
+</div>
+
