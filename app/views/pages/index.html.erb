@@ -31,7 +31,7 @@
                                 <%= search_form_for @q do |f| %>
                                    <%#　projects_pathはモデル名で読みかえること %>
                                            <p>
-                                               <%= f.search_field :ivent_title_or_address_cont,placeholder:"バンド/イベントを検索" ,style:"color:black",id: "q" %>
+                                               <%= f.search_field :ivent_title_or_address_cont,placeholder:"フリーワードで検索" ,style:"color:black",id: "q" %>
 
                                              <%= submit_tag "Search", style:"color:black", id:"r" %>
                                               <br />
@@ -134,10 +134,10 @@ $(function(){
              </div>
            </div>
            <div class="sns-icon">
-            <%=link_to "#" do %>
-           <i class="fa fa-twitter my-twitter" aria-hidden="true"></i>
-           <i class="fa fa-facebook-square my-facebook" aria-hidden="true"></i>
-           <% end %>
+                <%=link_to "#" do %>
+                 <i class="fa fa-twitter my-twitter" aria-hidden="true"></i>
+                 <i class="fa fa-facebook-square my-facebook" aria-hidden="true"></i>
+                <% end %>
          </div>
           
 
