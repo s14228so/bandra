@@ -42,6 +42,6 @@ end
 
 private
 def user_params
-  params.require(:user).permit(:profile,:user_age,:bandor,:basyo, :gender,:avatar)
+  params.require(:user).permit(:profile,:user_age,:bandor,:basyo, :gender, icon: params[:icon])
   end
 end

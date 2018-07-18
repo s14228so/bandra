@@ -897,6 +897,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  aws-sdk-s3
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
   byebug

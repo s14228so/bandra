@@ -39,6 +39,7 @@ gem 'omniauth-google-oauth2', '~> 0.5.3'
 
 gem 'rmagick', '~> 2.16'
 gem 'aws-sdk'
+gem "aws-sdk-s3", require: false #追記
 gem 'dropzonejs-rails'
 
 gem 'ransack', github: 'activerecord-hackery/ransack'

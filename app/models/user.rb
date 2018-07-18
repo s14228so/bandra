@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
   has_many :ivents
   has_many :icons
 
+  has_one_attached :icon
+
 
   def self.from_omniauth(auth)
   where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
