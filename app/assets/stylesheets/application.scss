@@ -532,10 +532,6 @@ padding-top:50px;
   margin-bottom:50px;
 }
 
-.navbar-toggle.collapsed{
-  background-color:#B3B3B3;
-  color:white;
-}
 
 
 .saishin-ivent{
@@ -558,7 +554,9 @@ margin:0 1uto;
 .sns-icon{
   margin-top:100px;
 }
-
+.jumbotron{
+  height:100%;
+}
 
 .ivents-bg{
   height:100%;
@@ -576,6 +574,10 @@ margin:0 1uto;
 .ivents-bg{
 text-align:center;
   height:100%;
+}
+.search-ivent{
+padding-top:20px;
+  text-align:center;
 }
 
 .img1{
@@ -599,6 +601,10 @@ height:400px;
 .icon-bar{
   background-color:white;
 }
+.search-title{
+text-align:center;
+  margin:0 auto;
+  }
 
 .album{
   width:100%;

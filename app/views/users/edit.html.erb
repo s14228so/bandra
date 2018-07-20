@@ -72,7 +72,9 @@
             </div>
                    <% end %>
                    <br>or
+                   <%if !@user.icons.present?%>
                    <%=link_to "プロフィール画像を追加する",user_icons_path(@user) %>
+                   <% end %>
                   </div>
 
    </div>
