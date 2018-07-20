@@ -1,5 +1,5 @@
-#facebook_app_id: "1040519062651713"
-#facebook_app_secret: "65c2f55590d1f7444b75a23908e2c8ce"
+facebook_app_id: "201811987146074"
+facebook_app_secret: "2cb258f7af4b7232b59fc698d571191d"
 
 S3_BUCKET_NAME: "bandra123"
 AWS_ACCESS_KEY_ID: "AKIAJCNCPGKZLCFUG7MA"
