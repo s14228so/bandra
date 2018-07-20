@@ -1,0 +1,43 @@
+<div class="ivents-bg">
+	<div class="container ivents-bg">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 saishin-ivent">
+
+                   <h2 class="saishin-title">最新のイベント</h2>
+
+                   <br>
+
+					           <div class="index-listings">
+							           <% @ivents.first(6).each do |ivent| %>
+							           <%=link_to ivent_path(ivent) do %>
+							            <div class="index-listing">
+
+							                  <% if ivent.photos.present? %>
+
+							                                       <%= image_tag ivent.photos[0].image.url() ,size: '200x150',class: "listing-img"%>
+							                   <% else %>
+							                                      <%= image_tag 'ivent.jpg', size: '200x150',class: "listing-img"%>
+							                   <% end %>
+
+
+							                    <br>
+							                    <div class="listing-title">
+							                      <h4>
+							                          <%=link_to ivent_path(ivent) do %>
+
+							                          <%=ivent.ivent_title%>
+							                        </h4>
+
+
+							                          <% end %><br>
+							                          <i class="fa fa-map-marker" aria-hidden="true"></i><%= ivent.address %>
+							                   </div>
+
+							              </div>
+					              <% end %>
+					             <% end %>
+					         </div>
+	   </div>
+      </div>
+</div>
+</div>
