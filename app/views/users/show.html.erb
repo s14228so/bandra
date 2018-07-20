@@ -40,27 +40,7 @@
         </div>
       <% end %>
 
-        <div class="panel panel-default vertifications hidden-xs hidden-sm">
-              <div class="panel-heading">
-                認証ID
-              </div>
-              <div class="panel-body">
-                <div id="ver-name">
-                      <em>ユーザー名<em><br>
-                      <%if @user.name%>
-                       <%=@user.name%>
-                       <% else %>
-                       <%=@user.nickname%>
-                       <% end %>
-                    </div>
-                    <br>
-                    <div id="ver-email">
-                      <em>メールアドレス<em>
-                      <%=@user.email%>
-                    </div>
-                    <br>
-              </div>
-        </div>
+       
       
 
       </div>
@@ -99,5 +79,51 @@
            </div>
          </div>
 
+         <div class="user-toko-index col-lg-6 col-md-8 col-sm-12 ">
+         <div class="panel panel-default">
+          <div class="panel-heading">
+            <label><%=@user.nickname%>さんの投稿</label>
+          </div>
+           <div class="panel-body toko-list">
+             <div class="index-listings">
+                         <% @ivents.first(6).each do |ivent| %>
+                         <%=link_to ivent_path(ivent) do %>
+                          <div class="index-listing">
+
+                                <% if ivent.photos.present? %>
+
+                                                     <%= image_tag ivent.photos[0].image.url() ,size: '200x150',class: "listing-img"%>
+                                 <% else %>
+                                                    <%= image_tag 'ivent.jpg', size: '200x150',class: "listing-img"%>
+                                 <% end %>
+
+
+                                  <br>
+                                  <div class="listing-title">
+                                    <h4>
+                                        <%=link_to ivent_path(ivent) do %>
+
+                                        <%=ivent.ivent_title%>
+                                      </h4>
+
+
+                                        <% end %><br>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i><%= ivent.address %>
+                                 </div>
+
+                            </div>
+                        <% end %>
+                       <% end %>
+                   </div>
+           </div>
+           
+
+         </div>
+
+         </div>
+
     </div>
   </div>
+
+
+
