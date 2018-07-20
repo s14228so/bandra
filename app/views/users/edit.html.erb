@@ -71,8 +71,8 @@
               <%= f.submit "更新する", class: "btn btn-warning" %>
             </div>
                    <% end %>
-                   <br>or
-                   <%if !@user.icons.present?%>
+                   <br>
+                   <%if !@user.icons.present?%>or
                    <%=link_to "プロフィール画像を追加する",user_icons_path(@user) %>
                    <% end %>
                   </div>
