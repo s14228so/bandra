@@ -112,7 +112,9 @@
                                         <i class="fa fa-edit" aria-hidden="true" ></i>編集
                                         <%end%>
 
-                                        <% if !@ivent.photo.present? %>
+
+
+                                        <% if !@ivent.photos.present? %>
                                          <%= link_to ivent_photos_path(@ivent) do%>
                                         <i class="fa fa-edit" aria-hidden="true" ></i>画像追加
                                         <%end%>
