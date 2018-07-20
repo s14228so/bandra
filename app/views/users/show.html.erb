@@ -34,11 +34,10 @@
         </div>
         
 <!-- send message ボタン -->
-      <% if current_user != @user %>
-        <div class="row-space-2 text-center">
-          <%= link_to "メッセージを送る", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post',class: "btn btn-danger btn-full" %>
-        </div>
-      <% end %>
+ <% if current_user != @user && user_signed_in? %>
+                                    <div class="row-space-2 text-center">
+                                      <%= link_to "プロフィールへ移動してメッセージを送る", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post',class: "btn btn-danger" %>
+                                   <% end %>
 
        
       
