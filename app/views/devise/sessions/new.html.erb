@@ -9,6 +9,8 @@
       <%= link_to "Facebookでログイン", user_facebook_omniauth_authorize_path,class: "btn btn-facebook" %>
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+         <%= render 'partial/deviseErrorMsg' %>
+         
         <div class="form-group">
           <%= f.label :email %><br />
           <%= f.email_field :email,class:"form-control",placeholder: "email", autofocus: true %>
