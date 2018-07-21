@@ -154,13 +154,13 @@ $(function(){
        
 
 
-  $(document).on('turbolinks:load', function
+  
 
 <!-- jquery読み込み -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <!-- スクロール -->
 <script type="text/javascript">
-$(document).on('turbolinks:load', function(){
+$(function(){
     $("a[href^=#]").click(function(){
     var speed = 1200;
     var href = $(this).attr("href");
@@ -171,6 +171,6 @@ $(document).on('turbolinks:load', function(){
     return false;
     });
 });
-
+</script>
 
 
