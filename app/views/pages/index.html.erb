@@ -78,9 +78,12 @@
 </div>
 
 
-</script>
+
+<!-- jquery読み込み -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<!-- スクロール -->
 <script type="text/javascript">
-$(function(){
+$(document).on('turbolinks:load', function(){
     $("a[href^=#page-bottom]").click(function(){
         $('html, body').animate({
           scrollTop: $(document).height()
@@ -155,22 +158,5 @@ $(function(){
 
 
   
-
-<!-- jquery読み込み -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<!-- スクロール -->
-<script type="text/javascript">
-$(function(){
-    $("a[href^=#]").click(function(){
-    var speed = 1200;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == ""?"html" : href);
-    var position = target.offset().top;
- 
-    $("body, html").animate({scrollTop:position}, speed, "swing");
-    return false;
-    });
-});
-</script>
 
 
