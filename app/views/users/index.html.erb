@@ -1,4 +1,11 @@
+<script type="text/javascript">
+  
+  $(document).on('turbolinks:load', function(){
+    $(".navbar").removeClass("navbar-devise");
+    $(".navbar").addClass("navbar-default");
+  });
 
+</script>
 <%= render 'partial/navbar' %>
 
 <div class="container bg-proedit"> 
