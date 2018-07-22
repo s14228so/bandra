@@ -79,19 +79,6 @@
 
 
 
-<!-- jquery読み込み -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<!-- スクロール -->
-<script type="text/javascript">
-$(document).on('turbolinks:load', function(){
-    $("a[href^=#page-bottom]").click(function(){
-        $('html, body').animate({
-          scrollTop: $(document).height()
-        },1500);
-        return false;
-    });
-});
-</script>
 
 
                     </div>
@@ -157,6 +144,18 @@ $(document).on('turbolinks:load', function(){
        
 
 
-  
+  <!-- jquery読み込み -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<!-- スクロール -->
+<script type="text/javascript">
+$(document).on('turbolinks:load', function(){
+    $("a[href^=#page-bottom]").click(function(){
+        $('html, body').animate({
+          scrollTop: $(document).height()
+        },1500);
+        return false;
+    });
+});
+</script>
 
 
