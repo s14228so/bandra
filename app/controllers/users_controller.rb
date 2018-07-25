@@ -3,17 +3,14 @@ class UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
     @ivents = @user.ivents
-  
-
-  	end
-  	
-  	def index
-  		@users = User.all
-  	end
-    def photos
-       @photo = Photo.new
+  end
+  def index
+  	@users = User.all
+  end
+  def photos
+    @photo = Photo.new
     @user = User.find(params[:id])
-    end
+  end
 
 
   def create
@@ -21,10 +18,9 @@ class UsersController < ApplicationController
   end
   def edit
       @user = User.find(params[:id])
-    if !(@user == current_user)
+   if !(@user == current_user)
       redirect_to root_path, notice:"他人のプロフィールページは編集できません"
-  end
-  
+   end
   end
   def icons
        @icon = Icon.new

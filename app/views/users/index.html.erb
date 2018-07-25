@@ -1,9 +1,8 @@
 
 <%= render 'partial/navbar' %>
 
-<div class="container bg-proedit"> 
+<div class="container bg-proedit">
     <div class="col-md-10 col-md-offset-1 proedit">
-
                    <h3> ユーザー一覧</h3>
                    <br>
            <div class="users-index">
@@ -22,7 +21,6 @@
 
                              <br>
                              <div class="users-name">
-                            
                                   <%if user.name%>
                                         <%=link_to user_path(user) do%>
                                             <%=user.name %>
@@ -32,8 +30,7 @@
                                               <%=user.nickname %>
                                          <% end %>
                                    <% end %>
-                                 </div>
-                            
+                              </div>
                     </div>
                     <% end %>
                 <%end%>

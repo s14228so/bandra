@@ -2,40 +2,29 @@
 
 <%= render 'partial/navbar' %>
 
-<div class="container bg-proedit"> 
+<div class="container bg-proedit">
     <div class="col-md-10 col-md-offset-1 proedit">
        <div class="index-search">
-        
-                   <h3> イベント一覧</h3>
-                  
-                                  
-                                     <%= form_tag ivents_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
-                                           <p>
-                                             <%= text_field_tag :search, params[:search],placeholder:"バンド/イベントを検索" ,style:"color:black" %>
+          <h3> イベント一覧</h3>
+              <%= form_tag ivents_path, :method => 'get' do %> 
+                 <p>
+                  <%= text_field_tag :search, params[:search],placeholder:"バンド/イベントを検索" ,style:"color:black" %>
+                  <%= submit_tag "Search", :people_name => nil, style:"color:black" %>
+                 </p>
+              <% end %>
 
-
-                                             <%= submit_tag "Search", :people_name => nil, style:"color:black" %>
-
-                                           </p>
-                                            <% end %>
-
-                              </div>
-                   <br>
+       </div>
+        <br>
 
            <div class="listings">
            <% @ivents.each do |ivent| %>
            <%=link_to ivent_path(ivent) do %>
-           
             <div class="listing">
-          
                   <% if ivent.photos.present? %>
-
-                                       <%= image_tag ivent.photos[0].image.url() ,size: '250x180',class: "listing-img"%>
+                          <%= image_tag ivent.photos[0].image.url() ,size: '250x180',class: "listing-img"%>
                    <% else %>
-                                      <%= image_tag 'ivent.jpg', size: '250x180',class: "listing-img"%>
+                          <%= image_tag 'ivent.jpg', size: '250x180',class: "listing-img"%>
                    <% end %>
-
-
                     <br>
                     <div class="listing-title">
                       <h4>
@@ -43,21 +32,14 @@
 
                           <%=ivent.ivent_title%>
                         </h4>
-
-                          
-                          <% end %><br>
+                          <% end %>
+                          <br>
                           <i class="fa fa-map-marker" aria-hidden="true"></i><%= ivent.address %>
                    </div>
-        
-             
-
-      
               </div>
               <% end %>
              <% end %>
            </div>
-             
-
       </div>
     </div>
 

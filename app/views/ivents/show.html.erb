@@ -16,8 +16,6 @@
                                <% end%>
                                <% end %>（プロフィルぺージへ)
                              </div>
-            
-          
                                 <div class="panel-heading titleholder" style="font-size:24px;">
                                   <em>
                                     <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
@@ -28,49 +26,30 @@
 
                                    <div class="show-gazo">
                                 <% if @ivent.photos.present? %>
-                                  
                                        <%= image_tag @ivent.photos[0].image.url(:medium),class: "show-gazo" %>
-                                       
                                     <% else %>
                                       <%= image_tag 'ivent.jpg', class: "show-gazo" %>
                                   <% end %>
                                 </div>
 
                                  <div class="panel-body bousen content-text">
-                                 
                                   <strong>本文：</strong>
-                            
-                                
-                                   
                                     <h5><%= @ivent.ivent_content%></h5>
                                   </div>
-
-                                
                                  <div class="panel-body bousen">
-                                
-
                                   <strong>ジャンル：</strong>
-
-                                    
                                     <h5><%= @ivent.music_type  %></h5>
                                   </div>
                                    <div class="panel-body bousen">
                                      <strong>場所：</strong>
-                              
-                                
                                     <h5><%= @ivent.address %></h5>
                                   </div>
                                   <div class="panel-body bousen">
                                      <strong>バンド名（イベント名）：</strong>
-                              
-                                
                                     <h5><%= @ivent.bandivent_mei %></h5>
                                   </div>
-                                
                                   <div class="panel-body bousen">
                                    <strong> ステータス：</strong>
-                              
-                              
                                     <h5><%= @ivent.select_people %></h5>
                                   </div>
                                    <div class="panel-body bousen">
@@ -80,24 +59,12 @@
                                       <%= link_to "プロフィールへ移動してメッセージを送る", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post',class: "btn btn-danger" %>
                                       <% else %>
                                        <%=link_to "ユーザーページへ",user_path(@user) %>
-                             
-
                                    <% end %>
                              </div>
-
                                     </div>
-                                 
-                             
-
-
-
                                    <%= link_to ivents_path(@ivent) do%>
                                  <i class="fa fa-caret-square-o-left"></i>戻る
                                   <%end%>
-
-
-
-
                                  <% if current_user == @user %>
 
                                   <div class="henshubtn">
@@ -119,12 +86,8 @@
                                         <i class="fa fa-edit" aria-hidden="true" ></i>画像追加
                                         <%end%>
                                         <% end %>
-                                  
-
-
                                 </div>
                                 <% end %>
-                              
                    </div>
                   </div>
                 </div>

@@ -8,32 +8,15 @@
                  <% else %>
                  <%=image_tag "avatar-default.png",:size => '50x50' %>
                  <% end %>
-
-
-
-             
-
-
-
-                
                 <br>
                 <%if !@user == @current_user %>
-               
-
-
-                <strong><%= message.user.nickname %></strong>
-      
-
+                  <strong><%= message.user.nickname %></strong>
                 <% else %>
              <div class="color-val">
-
                 <strong><%= message.user.nickname %></strong>
             </div>
 
                 <% end %>
-
-
-                
 
             </div>
 

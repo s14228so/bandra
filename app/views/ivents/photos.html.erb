@@ -1,6 +1,5 @@
 <%= render 'partial/navbar' %>
 <div class="container">
-   
     <div class="col-md-8 col-md-offset-2 ">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -14,18 +13,14 @@
             <div class="panel-body">          
                 <%= form_for @photo, html:{multipart: true,class:"dropzone", id:"my-dropzone" } do |f| %> 
                 <%= f.hidden_field :ivent_id, value: @ivent.id %>
-            
                     <div class="dz-message needsclick">
                         <h3>ファイルをここにドロップしてください。</h3>
                         <strong>アップロードするにはここをクリックしてください</strong>
                     </div>
-                    
                     <div class="fallback">
                         <%= f.file_field :image %>
                         <%= f.submit "Upload image" %>
                     </div>
-
-
                 <% end %>
             </div>
         </div>
@@ -33,11 +28,6 @@
             <%=link_to ivents_path do %>
             完了させる
             <% end %>
-
-
-
-
-
     </div>
 </div>
 

@@ -3,12 +3,10 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_conversation
 
-  # redirect_to this action from conversation controller create action
-  def index
-    # check if this current_user are involved in conversation
- @messages =Message.all
- @conversations = Conversation.all
- 
+   def index
+     @messages =Message.all
+     @conversations = Conversation.all
+
     if current_user == @conversation.sender || current_user == @conversation.recipient
       @other = current_user == @conversation.sender ? @conversation.recipient : @conversation.sender
       @messages = @conversation.messages.order("created_at DESC")
@@ -29,7 +27,6 @@ class MessagesController < ApplicationController
       respond_to do |format|
         format.js
       end
-      
     end
   end
 

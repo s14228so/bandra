@@ -2,7 +2,6 @@
 <div class="container bg-proedit">
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 proedit">
-		
 				<div class="panel-heading">
 					<div class="text-center">
 						<span style="font-size:24px;">
@@ -10,11 +9,8 @@
 						</span>
 					</div>
 				</div>
-			
-				<div class="panel-body">			
-					<!-- ここからフォーム -->
+				<div class="panel-body">
 					<%= form_for @ivent do |f| %>
-						
 						<div class="row">
 							<div class="col-md-12 select">
 								<div class="form-group">
@@ -22,7 +18,6 @@
 									<%=f.text_field :ivent_title, {required: 'true', placeholder:"タイトル",autofocus: 'true', class: 'form-control'}%>
 								</div>
 							</div>
-						
 					</div>
 					<br>
 					<div class="row">
@@ -33,20 +28,9 @@
 								</div>
 							</div>
 						</div>
-					
 					<br>
-					
-
-
-
-
-
-
 						<div class="row">
 							<div class="col-md-12 select">
-
-								
-									
 								<div class="form-group">
 									<label>ジャンル</label>
 									<%= f.select :music_type, [["J-POP","J-POP"], ["J-ROCK","J-ROCK"], ["Jazz","Jazz"],["R&B","R&B"],["HIP-HOP","HIP-HOP"],["ヴィジュアル","ヴィジュアル"]], {prompt:"選択してください"}, {required: 'true', autofocus: 'true', class: 'form-control'} %>
@@ -54,9 +38,6 @@
 							</div>
 						</div>
 						<br>
-
-						
-
 						<div class="row">
 							<div class="col-md-12 select">
 								<div class="form-group">
@@ -75,7 +56,6 @@
 							</div>
 						</div>
 						<br>
-						
 						<div class="row">
 							<div class="col-md-12 select">
 								<div class="form-group">
@@ -83,20 +63,11 @@
 									<%=f.select :select_people, [["出演者","出演者"],["主催者","主催者"],["未定","未定"]],{prompt:"選択してください"}, {required: 'true', autofocus: 'true', class: 'form-control'} %>
 								</div>
 							</div>
-
-						
 					</div>
-
-
 						<div class="actions text-center">
 							<%= f.submit "作成", class: "btn btn-danger" %>
 						</div>
 					<% end %>
-					
-			
-               
-                    
-	
 				</div>
 			</div>
 		</div>

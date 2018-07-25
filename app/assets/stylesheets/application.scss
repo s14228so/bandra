@@ -99,7 +99,6 @@ height:800px;
   font-weight:200;
 }
 
-
 .search-tag p{
   float:left;
 }
@@ -108,7 +107,6 @@ height:800px;
   width:600px;
   display:block;
   float:left;
-
 }
 q::selection{
  color:black;
@@ -123,7 +121,6 @@ q::selection{
 
 .people-1{
   margin-top:40px;
-
 }
 
 .people-2{
@@ -136,7 +133,6 @@ q::selection{
 .listings{
 
  float:left;
-   
 }
 .show-gazo{
   width:100%;
@@ -151,9 +147,6 @@ q::selection{
 
 .prof{
   height:500px;
-}
-.shinki-bg{
- 
 }
 .index-search{
   padding-bottom:30px;
@@ -318,10 +311,6 @@ border-radius: 8px;
     background-color: #fff;
 }
 
-.dropdown-menu  { 
- 
-}
-
 .navbar-default {
     background: transparent;
     border-color: transparent;
@@ -332,7 +321,6 @@ border-radius: 8px;
     color: white;
     font-size: 13px;
 }
-
 
 
 .bousen{
@@ -404,7 +392,6 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
     background:linear-gradient(transparent 80%, #99cccc 60%);
     letter-spacing: .04em;
     margin-bottom:30px;
-  
 }
 
 
@@ -419,7 +406,6 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
     background:linear-gradient(transparent 80%, #B0C4DE 60%);
     letter-spacing: .04em;
     margin-bottom:30px;
-  
 }
 
 
@@ -431,16 +417,11 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 }
 
 .utilization-bg{
-
-
  background-color:white;
-  
 }
 
 .concept-bg{
 background-color:#f6f6f6;
- 
-
 }
 
 .search-bg{
@@ -458,17 +439,6 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .search-ivent{
   height:350px;
 }
@@ -477,7 +447,6 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 
 .utilization{
   padding-bottom:150px;
- 
 }
 
 
@@ -488,14 +457,13 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 
 
 .utilization{
-padding-top:50px; 
+padding-top:50px;
 }
 
 
 .lesson{
   float:left;
   margin-right:50px;
- 
 }
 
 @media screen and (min-width: 960px) {
@@ -504,19 +472,13 @@ padding-top:50px;
 }
 }
 
-
 .jissou {
   text-align:center;
 }
 
 // タブレット用
 @media screen and (max-width: 768px){
-  
 }
-
-
-
-
 
 //smartphone
 // スマホ用
@@ -547,21 +509,9 @@ padding-top:50px;
   color:white;
 }
 
-
-
-
-
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
 }
-
-
-
-
-
-
-
-
 
 
 .saishin-ivent{
@@ -680,30 +630,6 @@ text-align:center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-1{
   margin-right:15px;
 }
@@ -721,7 +647,6 @@ text-align:center;
 .fa-envelope{
 font-size:30px;
  padding:25px;
-  
 }
 
 .fa-calendar{
@@ -732,7 +657,6 @@ font-size:30px;
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  
   background: none;
   color: #86D1E8;
 }
@@ -797,25 +721,17 @@ font-size:30px;
   margin-top:100px;
 }
 
-
-
 .color-val{
   color:gray;
 }
 
-
-
-
 body{
     color: #222;
-  
 }
 
 .footer{
   width:100%;
 }
-
-
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
@@ -823,16 +739,11 @@ body{
 #box {
   display: flex;
   align-items: center;
-  
-
-
   justify-content: center;
   width: 100%;
   height: 100px;
- 
   font-family: 'Raleway';
   font-size: 2.5rem;
-  
 }
 
 .gradient-border {
@@ -860,7 +771,6 @@ body{
 .music_people a{
   color:white;
   text-decoration:none;
-  
 }
 
 @keyframes animatedgradient {
@@ -875,15 +785,9 @@ body{
     }
 }
 
-
-
-
-
 .btn-regist{
   padding:30px 0;
 }
-
-
 
 .login-white{
   color:white;
@@ -895,24 +799,24 @@ body{
 
 
 .bg-regist{
-   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(ivent.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(ivent.jpg);
   background-size: cover;
   // 背景画像の位置を決める
   background-position: 50% 50%;
   width:100%;
-height:800px;
-color:white;
-margin-top:0px;
-
+  height:800px;
+  color:white;
+  margin-top:0px;
 }
 
 .bg-proedit{
-   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(yuka.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.05) ), url(yuka.jpg);
   background-size: cover;
   // 背景画像の位置を決める
   background-position: 50% 50%;
   width:100%;
-height:100%;
+  height:100%;
 
 margin-top:0px;
 
@@ -920,34 +824,23 @@ margin-top:0px;
 
 .proedit{
   background-color:transparent;
-
-
 }
-
-
 
 .navbar-devise{
   margin:0px;
 }
-
-
 
 .ivents-bg{
   background-color:#f6f6f6;
   height:100%;
 }
 
-
-
-
 .album {
   margin: auto;
- 
   position: relative;
 }
 
 .album img {
-
   width: 100%;
   animation-name: album;
   -webkit-animation-name: album;
@@ -968,14 +861,12 @@ margin-top:0px;
   -webkit-animation-delay:3s;
   position: absolute;
   top: 0;
-  
 }
 
 @keyframes album {
   0% {
     opacity: 0;
   }
-  
   12.5% {
     opacity: 1;
   }
@@ -992,7 +883,6 @@ margin-top:0px;
   0% {
     opacity: 0;
   }
-  
   12.5% {
     opacity: 1;
   }
@@ -1005,23 +895,12 @@ margin-top:0px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 .sns-icon{
   float:right;
   margin-right:50px;
   margin-bottom:20px;
   color:f099;
 }
-
 
 .fa-facebook-square{
    font-size:30px;

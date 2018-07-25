@@ -17,10 +17,10 @@
                      <div class="col-md-8 col-md-offset-2 text-center">
 
 
-            
+
 
                        <h1 class="display-3 people-1">Bandra</h1>
-                
+
                        <p>Music connects People</p>
                                  <br>
 
@@ -38,46 +38,16 @@
 
                               </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                               <% if (!user_signed_in?) %>
                               <div class="col-md-8 col-md-offset-2 button-top">
-       
                                       <%=link_to "新規登録する", new_user_registration_path, class: "btn btn-primary btn-lg btn-1" %>
-
-                                    
                                         <%=link_to "ログインする", new_user_session_path, class: "btn btn-success btn-lg btn-2" %>
                                       </div>
                              <% end %>
 
-<div class="scroll_button_btm">
-    <a href="#page-bottom"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-</div>
-
-
+                <div class="scroll_button_btm">
+                    <a href="#page-bottom"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                </div>
 
 
 
@@ -88,19 +58,12 @@
 </div>
 
 
-
-
-
-
-        
-           
             <%=render 'pages/concept' %>
             <%=render 'pages/utilization'%>
             <%=render 'pages/ivents' %>
              <%=render 'pages/search' %>
              <div class="footer-top">
              <div class="col-md-8 col-md-offset-2">
-             
               <ul>
                 <li>
                   <%=link_to "TOP","#"%>
@@ -118,7 +81,6 @@
 
               </ul>
               <br>
-            
              </div>
            </div>
            <div class="sns-icon">
@@ -127,22 +89,12 @@
                  <i class="fa fa-facebook-square my-facebook" aria-hidden="true"></i>
                 <% end %>
          </div>
-          
-
-
 
              <div class="footer">
-    
              <div class="gradient-border" id="box">
-             
               <p class="music_people"> <%=link_to "Music connects People","/" %></p>
-                
               </div>
-              
             </div>
-
-       
-
 
   <!-- jquery読み込み -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>

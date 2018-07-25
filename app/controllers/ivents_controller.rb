@@ -3,20 +3,15 @@ class IventsController < ApplicationController
   def new
 
     @ivent = current_user.ivents.build
-    
-
   end
   def index
-  
-     @q = Ivent.ransack(params[:q])
+    @q = Ivent.ransack(params[:q])
     @ivents = @q.result(distinct: true)
-   
   end
 
   def show
     @ivent = Ivent.find(params[:id])
-     @photos = @ivent.photos
-
+    @photos = @ivent.photos
     @user = @ivent.user
   end
   def edit
@@ -55,7 +50,6 @@ end
   def ivent_params
     params.require(:ivent).permit(:address,:ivent_title,:ivent_content,:music_type,:bandivent_mei,:select_people,:image)
   end
-
 
 end
 
