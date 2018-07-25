@@ -46,7 +46,7 @@
                              <% end %>
 
                 <div class="scroll_button_btm">
-                    <a href="#page-bottom"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                    <a href="#concept-scroll"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
                 </div>
 
 
@@ -101,13 +101,19 @@
 <!-- スクロール -->
 <script type="text/javascript">
 $(document).on('turbolinks:load', function(){
-    $("a[href^=#page-bottom]").click(function(){
+  var speed = 1000;
+    $("a[href^=#concept-scroll]").click(function(){
+       var id = $(this).attr("href")
+      var target = $(href == "#" || href == "" ? 'html' : href);
+         var position = target.offset().top;
         $('html, body').animate({
-          scrollTop: $(document).height()
-        },1500);
+          scrollTop: position
+        },speed,'swing');
         return false;
     });
 });
 </script>
+
+
 
 
