@@ -68,7 +68,7 @@
                                  <% if current_user == @user %>
 
                                   <div class="henshubtn">
-                                        <%= link_to ivent_path(@ivent), method: :delete, data: {confirm: "Are you sure?"} do %>
+                                        <%= link_to ivent_path(@ivent), method: :delete, data: {confirm: "イベントを削除してよろしいですか？",title: "イベント削除", cancel: "やめる",commit: "削除する"} do %>
 
                                         <i class="fa fa-remove" aria-hidden="true"></i>
                                         削除

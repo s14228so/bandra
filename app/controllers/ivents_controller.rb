@@ -1,7 +1,6 @@
 class IventsController < ApplicationController
   before_action :authenticate_user!, only: [:update,:edit, :create,:destroy,:photos]
   def new
-
     @ivent = current_user.ivents.build
   end
   def index

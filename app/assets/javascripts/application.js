@@ -12,14 +12,15 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
 //= require turbolinks
+//= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
 //= require toastr
 //= require dropzone
 //= require private_pub
 //= require jquery_ujs
+// = require data-confirm-modal
 
 
 

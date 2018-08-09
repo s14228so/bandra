@@ -4,18 +4,19 @@
 @import "toastr";
 @import "dropzone/dropzone";
 @import "font-awesome";
+@import "var";
 
 
 .jumbotron {
     padding-top: 0px;
     // 背景画像を暗くする
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(cristian.jpg);
-  background-size: cover;
-  // 背景画像の位置を決める
-  background-position: 50% 50%;
-height:800px;
-   border-radius:0 0 20px 20px;
-   margin-bottom:0px;
+    background-size: cover;
+    // 背景画像の位置を決める
+    background-position: 50% 50%;
+    height:800px;
+    border-radius:0 0 20px 20px;
+    margin-bottom:0px;
 }
 .jumbotron .container .row{
    margin-top: 100px;
@@ -36,6 +37,7 @@ height:800px;
     height: 120px;
   }
 }
+
 
 .dropzone .dz-preview .dz-image img{
   width: 100%;
@@ -69,16 +71,15 @@ height:800px;
 
 
 .scroll_button_btm{
-   display:block;
+  display:block;
   margin:0 auto;
   text-align:center;
   margin-top:300px;
-
-}
-
-.scroll_button_btm a{
+  a{
   text-decoration:none;
+  }
 }
+
 
 
 .fa-angle-double-down{
@@ -167,7 +168,7 @@ border-radius: 8px;
  margin-right:20px;
  width:200px;
  height:250px;
-  background-color:white;
+ background-color:white;
  border-radius: 8px;
 
 }
@@ -821,9 +822,7 @@ body{
   background-position: 50% 50%;
   width:100%;
   height:100%;
-
-margin-top:0px;
-
+  margin-top:0px;
 }
 
 .proedit{
@@ -922,4 +921,8 @@ color: #1DA1F2;
   font-size:30px;
   margin-right:10px;
   color:f099;
+}
+
+.unti{
+  color:$satoshi;
 }
