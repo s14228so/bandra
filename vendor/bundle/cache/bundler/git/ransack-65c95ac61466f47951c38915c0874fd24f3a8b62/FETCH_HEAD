@@ -1,5 +1,8 @@
-1d1c64b47012176476ec2ebcf4b0ba07bc3a15eb		branch '1-8-stable' of https://github.com/activerecord-hackery/ransack
-437f642c553c56de1b0f9a1569eaa5496d9552f4		branch 'master' of https://github.com/activerecord-hackery/ransack
+35da74cb235e2f1d31f87b5693dfc2125cbeacce		branch '1-8-stable' of https://github.com/activerecord-hackery/ransack
+63ccf9ff07c7bae08dfd860e28728a5a4da5a3f3		branch 'association_table_issue' of https://github.com/activerecord-hackery/ransack
+50d88c2674e8b03e56887624406e53d17290b17e		branch 'bulgarian' of https://github.com/activerecord-hackery/ransack
+656423b09e12f0dbc7f5b40d5984f155d94315d1		branch 'greek' of https://github.com/activerecord-hackery/ransack
+c36d8b62f50a9aeef01426955870b379e76d74c4		branch 'master' of https://github.com/activerecord-hackery/ransack
 29a8d43d073023b3f54a0130c83264d6fb3a0e8c	not-for-merge	tag '1.8.5' of https://github.com/activerecord-hackery/ransack
 29a8d43d073023b3f54a0130c83264d6fb3a0e8c	not-for-merge	tag '1.8.6' of https://github.com/activerecord-hackery/ransack
 be40da9ab1eaabb716c91cb32722ab9ff653d678	not-for-merge	tag '1.8.7' of https://github.com/activerecord-hackery/ransack
@@ -52,3 +55,6 @@ f9836002992af0a88eeeca8d07047a4d89f09bd0	not-for-merge	tag 'v1.7.0' of https://g
 b6aed07051f4cbe9bb64c821c8b0fb639ed6a444	not-for-merge	tag 'v1.8.6' of https://github.com/activerecord-hackery/ransack
 ba4c08b6ec07b252ccd759241dcecc8cd62d0781	not-for-merge	tag 'v1.8.7' of https://github.com/activerecord-hackery/ransack
 e8d54de050d06ed788f561bc4d0cbfba14ae8391	not-for-merge	tag 'v1.8.8' of https://github.com/activerecord-hackery/ransack
+1be7ba88a14154ef56130e0b240f410782728418	not-for-merge	tag 'v1.8.9' of https://github.com/activerecord-hackery/ransack
+ec0b59677880b3f1dced69678f38582a3422605f	not-for-merge	tag 'v2.0.0' of https://github.com/activerecord-hackery/ransack
+ca6d24bb33a3438ddaab14d6db6d76e9cd3b4aa8	not-for-merge	tag 'v2.0.1' of https://github.com/activerecord-hackery/ransack

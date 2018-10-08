@@ -23,7 +23,34 @@
     color: #fff;
 }
 
+.app{
+  
+}
+.fadein {
+    opacity : 0.0;
+    transform : translate(-50px, 50px);
+    transition : all 500ms;
+    }
+ 
 
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.fade1{
+  margin-top:500px;
+  margin-left:100px;
+    }
+.fade2{
+  margin-top:500px;
+    margin-left:100px;
+    }
+    .fade3{
+  margin-top:500px;
+  margin-bottom:500px;
+    margin-left:100px;
+    }
 // dropzone.jsのcss
 @media (max-width: 768px){
   .dz-preview, .dz-processing, .dz-image-preview, .dz-error, .dz-complete {

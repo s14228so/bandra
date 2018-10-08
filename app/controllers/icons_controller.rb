@@ -36,6 +36,6 @@ class IconsController < ApplicationController
 
     private
     def icon_params
-    params.fetch(:icon, {}).permit(:avatar,:user_id)
-end
+        params.fetch(:icon, {}).permit(:avatar,:user_id)
+    end
 end

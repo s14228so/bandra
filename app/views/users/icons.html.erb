@@ -9,7 +9,6 @@
                     <span style="font-size:24px;">プロフィール写真の追加</span>
                 </div>
             </div>
-
             <div class="panel-body">          
                 <%= form_for @icon, html:{multipart: true,class:"dropzone", id:"my-dropzone" } do |f| %> 
                 <%= f.hidden_field :user_id, value: @user.id %>
@@ -21,8 +20,6 @@
                         <%= f.file_field :avatar %>
                         <%= f.submit "Upload image" %>
                     </div>
-
-
                 <% end %>
             </div>
         </div>
@@ -30,11 +27,8 @@
             <%=link_to user_path(current_user) do %>
             完了させる
             <% end %>
-
     </div>
 </div>
-
-
 <!-- dropzone.js -->
 <script type="text/javascript">
   $(function () {

@@ -1,64 +1,33 @@
-<div class="container">
-	<div class="row">
-		<div class="lead">やあ</div>
-		<p>コンテンツを引用するときなどに活用されるblockquoteタグ。左右揃えのスタイリングが使えるのをご存じですか。</p>
-		<ul class="list-inline">
-			<li>あああ</li>
-			<li>いいい</li>
-			<li>ううう</li>
-		</ul>
-		<%=image_tag "mizu.jpg",class: "img-thumbnail" %>
-		<button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>Download</button>
-		<ol class="breadcrumb">
-	<li><a href="http://bootstrap3.cyberlab.info">Bootstrap3日本語リファレンス</a></li>
-	<li><a href="http://bootstrap3.cyberlab.info/components/">コンポーネント</a></li>
-	<li class="active">パンくず</li>
-</ol>
-
-<nav>
-	<ul class="pagination">
-		<li>
-			<a href="#" aria-label="前のページへ">
-				<span aria-hidden="true">«</span>
-			</a>
-		</li>
-		<li><a href="#">1</a></li>
-		<li class="active"><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li>
-			<a href="#" aria-label="次のページへ">
-				<span aria-hidden="true">»</span>
-			</a>
-		</li>
-	</ul>
-</nav>
-<div class="panel panel-warning">
-	<div class="panel-heading">
-		パネルのヘッダー
-	</div>
-	<div class="panel-body">
-		パネルの内容
-	</div>
+<div>
+ 
+    <section class="fadein fade1">
+        <h2>情報設計</h2>
+        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+    </section>
+ 
+    <section class="fadein fade2">
+        <h2>サイトマップ</h2>
+        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+    </section>
+ 
+    <section class="fadein fade3">
+        <h2>ワイヤーフレーム</h2>
+        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+    </section>
+ 
 </div>
 
-<ul class="list-group">
-	<li class="list-group-item">
-		リスト項目Ａ
-		<span class="badge">26</span>
-	</li>
-	<li class="list-group-item">
-		リスト項目Ｂ
-	</li> 
-		<span class="badge">7</span>
-	<li class="list-group-item">
-		リスト項目Ｃ
-		<span class="badge">10</span>
-	</li>
-</ul>
-
-</div>
-</div>
-<div>やあああ</div>
-
+<script type="text/javascript">
+$(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 200){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
+});
+</script>

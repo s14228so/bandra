@@ -1,4 +1,3 @@
-
 class PhotosController < ApplicationController
     def create
         @photo = Photo.new(photo_params)
@@ -36,7 +35,7 @@ class PhotosController < ApplicationController
     end
 
     private
-    def photo_params
-    params.fetch(:photo, {}).permit(:image,:ivent_id)
-end
+      def photo_params
+        params.fetch(:photo, {}).permit(:image,:ivent_id)
+      end
 end
