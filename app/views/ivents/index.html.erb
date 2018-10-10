@@ -31,7 +31,8 @@
                       <h4>
                           <%=link_to ivent_path(ivent) do %>
 
-                          <%=ivent.ivent_title%>
+                          <%=truncate(ivent.ivent_title,:length => 20)%>
+                  
                         </h4>
                           <% end %>
                           <br>

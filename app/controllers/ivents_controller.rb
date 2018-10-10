@@ -27,12 +27,13 @@ class IventsController < ApplicationController
     end
   
   end
+
   def create
     @ivent = current_user.ivents.build(ivent_params)
     if @ivent.save
       redirect_to ivent_photos_path(@ivent),notice: "イベント作成完了、画像を追加してください"
     else
-      redirect_to new_ivent_path, notice:"作成できませんでした、イベント内容を確認してください"
+      render "new", notice:"作成できませんでした、イベント内容を確認してください"
     end
   end
   def destroy

@@ -21,7 +21,9 @@
                                     <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
                                   </em>
 
-                                <%= @ivent.ivent_title %>
+                         
+                                <%=truncate(@ivent.ivent_title,:length => 20)%>
+
                                 </div>
 
                                    <div class="show-gazo">
@@ -34,7 +36,7 @@
 
                                  <div class="panel-body bousen content-text">
                                   <strong>本文：</strong>
-                                    <h5><%= @ivent.ivent_content%></h5>
+                                    <h5><%= truncate(@ivent.ivent_content ,:length => 20)) %></h5>
                                   </div>
                                  <div class="panel-body bousen">
                                   <strong>ジャンル：</strong>

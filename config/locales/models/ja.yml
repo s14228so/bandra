@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    models:
+      ivent: イベント
+    attributes:
+      ivent:
+        id: ID
+        created_at: 登録日時
+        updated_at: 更新日時
+        ivent_content: イベント内容
+        ivent_title: タイトル
+        ivent_date: 日付
+        music_type: ジャンル
+        select_people: ステータス
+        bandivent_mei: バンド名
+        photo: 写真
