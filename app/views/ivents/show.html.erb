@@ -12,7 +12,7 @@
                                <% end %>
                                <% else %>
                                <%=link_to user_path(@user) do%>
-                               <%=@user.nickname %>
+                               <%=truncate(@user.nickname) %>
                                <% end%>
                                <% end %>（プロフィルぺージへ)
                              </div>
@@ -48,7 +48,7 @@
                                   </div>
                                   <div class="panel-body bousen">
                                      <strong>バンド名（イベント名）：</strong>
-                                    <h5><%= @ivent.bandivent_mei %></h5>
+                                    <h5><%= truncate(@ivent.bandivent_mei) %></h5>
                                   </div>
                                   <div class="panel-body bousen">
                                    <strong> ステータス：</strong>
