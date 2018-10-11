@@ -91,8 +91,7 @@
                                   <div class="listing-title">
                                     <h4>
                                         <%=link_to ivent_path(ivent) do %>
-
-                                        <%=ivent.ivent_title%>
+                                            <%=truncate(ivent.ivent_title,:length =>  10)%>
                                       </h4>
 
 
