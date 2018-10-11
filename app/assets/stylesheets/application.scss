@@ -188,6 +188,10 @@ q::selection{
   background-color:white;
 border-radius: 8px;
 }
+.search_form{
+  border-radius: 5px;
+  width: 200px;
+}
 
 .index-listing{
  float:left;
@@ -197,7 +201,7 @@ border-radius: 8px;
  height:250px;
  background-color:white;
  border-radius: 8px;
-
+ box-shadow: 0px 9px 3px -3px rgba(0,0,0,0.6);
 }
 .listing-img{
 
@@ -543,8 +547,8 @@ padding-top:50px;
 
 
 .saishin-ivent{
-display:block;
-margin:0 1uto;
+  display:block;
+  margin:0 auto;
   height:100%;
 }
 .search-bg{
@@ -573,6 +577,7 @@ margin-top:50px;
 .ivents-bg{
   height:100%;
   background-color:red;
+  padding-top: 30px;
 }
 .index-listings{
   height:100%;

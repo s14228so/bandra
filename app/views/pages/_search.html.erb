@@ -3,18 +3,18 @@
   <div class="row serch-ivent">
     <div class="col-md-8 col-md-offset-2 col-sm-12 search-ivent">
       <h2 class="search-title">Search</h2><br>
-               <div class="col-md-4 col-sm-10 search-1">
+               <div class="col-md-8 col-sm-10 search-1">
                     <h3>イベントを探す</h3>
                     <%= search_form_for @q do |f| %>
                           <div class="search-2">
                             <p>タイトルで検索</p>
-                             <%= f.search_field :ivent_title_start %>
+                             <%= f.search_field :ivent_title_start, class: "search_form" %>
                              <%= f.submit %>
                            </div>
                            <div class="search-3">
 
                               <p>ジャンルで検索</p>
-                             <%= f.search_field :music_type_start %>
+                             <%= f.search_field :music_type_start,class: "search_form" %>
                              <%= f.submit %>
                             <% end %>
                           </div>

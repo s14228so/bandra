@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
   has_many :icons
 
   has_one_attached :icon
+  validates :nickname, length: { maximum: 30 }
+  validates :profile, length: { maximum: 100 }
+
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

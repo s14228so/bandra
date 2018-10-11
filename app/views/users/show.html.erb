@@ -18,7 +18,8 @@
                                                    <% end %>
                                    <% end %>
                                                 <br>
-                                 <%=@user.nickname%>
+          
+                                   <%=truncate(@user.nickname,:length => 20)%>
                                       <%if current_user == @user %>
                                                    <%=link_to edit_user_path(current_user) do %>
                                                         <i class="fa fa-cog" aria-hidden="true"></i>
@@ -41,7 +42,9 @@
                                                 </div>
                                                  <div class="panel-body profile">
                                                    <label>自己紹介</label>
-                                                  <%=@user.profile %>
+                                           
+
+                                   <%=truncate(@user.profile ,:length =>  100)%>
                                                 </div>
                                                  <div class="panel-body profile">
                                                    <label>年齢</label>
@@ -68,7 +71,7 @@
          <div class="col-md-8 col-sm-12 row-space-top-3">
          <div class="panel panel-default">
           <div class="panel-heading">
-            <label><%=@user.nickname%>さんの投稿</label>
+            <label><%=truncate(@user.nickname)%>さんの投稿</label>
           </div>
            <div class="panel-body toko-list">
              <div class="index-listings">
