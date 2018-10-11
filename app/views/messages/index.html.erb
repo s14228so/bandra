@@ -6,7 +6,7 @@
                 <div class="panel-heading">
                       <strong>
                         <%=link_to user_path(@other) do %>
-                        <%= @other.nickname %>
+                        <%= truncate(@other.nickname) %>
                             <% end %>
                         </strong>さんとのチャット
                 </div>
