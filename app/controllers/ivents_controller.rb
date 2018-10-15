@@ -53,18 +53,3 @@ class IventsController < ApplicationController
    end
    
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

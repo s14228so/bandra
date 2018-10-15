@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-       @q = Ivent.ransack(params[:q])
+    @q = Ivent.ransack(params[:q])
     @ivents = @q.result(distinct: true)
   end
   def description

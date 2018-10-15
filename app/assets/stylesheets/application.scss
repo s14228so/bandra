@@ -4,7 +4,6 @@
 @import "toastr";
 @import "dropzone/dropzone";
 @import "font-awesome";
-@import "var";
 
 
 .jumbotron {
@@ -19,38 +18,32 @@
     margin-bottom:0px;
 }
 .jumbotron .container .row{
-   margin-top: 100px;
+    margin-top: 100px;
     color: #fff;
-}
-
-.app{
-  
 }
 .fadein {
     opacity : 0.0;
     transform : translate(-50px, 50px);
     transition : all 500ms;
-    }
- 
-
+}
 .fadein.scrollin {
     opacity : 1;
     transform : translate(0, 0);
-    }
+}
 
 .fade1{
   margin-top:500px;
   margin-left:100px;
-    }
+}
 .fade2{
   margin-top:500px;
-    margin-left:100px;
-    }
-    .fade3{
-  margin-top:500px;
-  margin-bottom:500px;
-    margin-left:100px;
-    }
+      margin-left:100px;
+}
+.fade3{
+      margin-top:500px;
+      margin-bottom:500px;
+      margin-left:100px;
+}
 // dropzone.jsのcss
 @media (max-width: 768px){
   .dz-preview, .dz-processing, .dz-image-preview, .dz-error, .dz-complete {
@@ -103,14 +96,14 @@
   text-align:center;
   margin-top:300px;
   a{
-  text-decoration:none;
+    text-decoration:none;
   }
 }
 
 
 
 .fa-angle-double-down{
-   font-size:50px;
+  font-size:50px;
   display:block;
   margin:0 auto;
   color:white;
@@ -137,14 +130,14 @@
   float:left;
 }
 q::selection{
- color:black;
+  color:black;
 }
 
 #r{
   height:50px;
   width:100px;
-   display:block;
-   float:left;
+  display:block;
+  float:left;
 }
 
 .people-1{
@@ -180,13 +173,13 @@ q::selection{
   padding-bottom:30px;
 }
 .listing{
-    margin-right:40px;
-    margin-bottom:40px;
+  margin-right:40px;
+  margin-bottom:40px;
   float:left;
-   width:250px;
+  width:250px;
   height:100%;
   background-color:white;
-border-radius: 8px;
+  border-radius: 8px;
 }
 .search_form{
   border-radius: 5px;
@@ -258,14 +251,14 @@ border-radius: 8px;
 }
 
 .users-list{
-    margin-right:40px;
-    margin-bottom:40px;
-    padding-top:10px;
+  margin-right:40px;
+  margin-bottom:40px;
+  padding-top:10px;
   float:left;
-   width:250px;
+  width:250px;
   height:100%;
   background-color:white;
-border-radius: 8px;
+  border-radius: 8px;
 }
 
 
@@ -308,19 +301,16 @@ border-radius: 8px;
 }
 
 .btn-facebook{
-    color:#fff;
-    background-color:#4c66a4;
+  color:#fff;
+  background-color:#4c66a4;
 }
 
 
 .btn-twitter{
-
-    color:#fff;
-    background-color:#00aced;
-       margin-left:10px;
+  color:#fff;
+  background-color:#00aced;
+  margin-left:10px;
 }
-
-
 
 .navbar-deafult .navbar-nav > li > a{
     color: white;
@@ -329,31 +319,27 @@ border-radius: 8px;
 
 
 .navbar-default .navbar-brand {
-    color: white;
+   color: white;
 }
 
 .jumbotron .container .row{
-    margin-top: 10px;
-    color: #fff;
+  margin-top: 10px;
+  color: #fff;
 }
-
-
 
 .navbar-default .icon-bar{
-    background-color: #fff;
+  background-color: #fff;
 }
-
 .navbar-default {
-    background: transparent;
-    border-color: transparent;
-    z-index: 10;
+  background: transparent;
+  border-color: transparent;
+  z-index: 10;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: white;
-    font-size: 13px;
+  color: white;
+  font-size: 13px;
 }
-
 
 .bousen{
   border-bottom:dotted 1px gray ;
@@ -362,44 +348,39 @@ border-radius: 8px;
   margin-left:20px;
 }
 .henshubtn{
-float:right;
+  float:right;
   margin-left:20px;
 }
 .navbar-devise{
-    background-color: #fff;
-    border-color: #fff;
-    z-index:10;
+  background-color: #fff;
+  border-color: #fff;
+  z-index:10;
 }
 
 .navbar-devise .navbar-nav > li > a{
-color:#222222;
-font-size: 13px;
-    }
+  color:#222222;
+  font-size: 13px;
+}
 
 .profile-0 {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
-
 .profile-1 {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
-
 .profile-2{
-    width: 128px;
-    height: 128px;
+  width: 128px;
+  height: 128px;
 }
-
 .profile-3{
   width:300px;
   height:300px;
 }
-
 .profile-full {
   width: 30%;
 }
-
 
 .concept{
   height:400px;
@@ -410,36 +391,31 @@ font-size: 13px;
 .concept-title{
   font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
   font-size: 30px;
-    line-height: 48px;
-    display:inline-block;
-    background:linear-gradient(transparent 80%, #ffff66 60%);
-    letter-spacing: .04em;
+  line-height: 48px;
+  display:inline-block;
+  background:linear-gradient(transparent 80%, #ffff66 60%);    letter-spacing: .04em;
 }
 
 .search-title{
 font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
   font-size: 30px;
-    line-height: 48px;
-    display:inline-block;
-    background:linear-gradient(transparent 80%, #99cccc 60%);
-    letter-spacing: .04em;
-    margin-bottom:30px;
+  line-height: 48px;
+  display:inline-block;
+  background:linear-gradient(transparent 80%, #99cccc 60%);
+  letter-spacing: .04em;
+  margin-bottom:30px;
 }
-
-
-
 
 
 .saishin-title{
 font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
   font-size: 30px;
-    line-height: 48px;
-    display:inline-block;
-    background:linear-gradient(transparent 80%, #B0C4DE 60%);
-    letter-spacing: .04em;
-    margin-bottom:30px;
+  line-height: 48px;
+  display:inline-block;
+  background:linear-gradient(transparent 80%, #B0C4DE 60%);
+  letter-spacing: .04em;
+  margin-bottom:30px;
 }
-
 
 .concept-text{
   font-size:16px;
@@ -464,8 +440,8 @@ height:350px;
 .utilization-title{
 font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004", sans-serif;
   font-size: 30px;
-    line-height: 48px;
-    display:inline-block;
+  line-height: 48px;
+  display:inline-block;
   background:linear-gradient(transparent 80%, #F4B49C 60%);
   letter-spacing: .04em;
 
@@ -474,19 +450,13 @@ font-family: "Helvetica Neue LT W01_35 Thin", "Hiragino Kaku Gothic W1 JIS2004",
 .search-ivent{
   height:350px;
 }
-
-
-
 .utilization{
   padding-bottom:150px;
 }
 
-
 .lessons{
   float:left;
 }
-
-
 
 .utilization{
 padding-top:50px;
@@ -528,7 +498,6 @@ padding-top:50px;
 .users-list{
   width:100%;
 }
-
 .bg-proedit{
   width:100%;
   height:100%;
@@ -542,7 +511,7 @@ padding-top:50px;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
+  color: white;
 }
 
 
@@ -556,7 +525,7 @@ padding-top:50px;
 }
 
 .footer{
- height:100%;
+  height:100%;
 }
 
 
@@ -571,7 +540,7 @@ padding-top:50px;
 }
 
 .scroll_button_btm{
-margin-top:50px;
+  margin-top:50px;
 }
 
 .ivents-bg{
@@ -589,15 +558,14 @@ margin-top:50px;
   padding:10px 30px;
 }
 .ivents-bg{
-text-align:center;
-  height:100%;
-}
-.search-ivent{
-padding-top:20px;
   text-align:center;
   height:100%;
 }
-
+.search-ivent{
+  padding-top:20px;
+  text-align:center;
+  height:100%;
+}
 .footer{
   height:100%;
 }
@@ -610,9 +578,8 @@ height:400px;
   height:450px;
 }
 
-
 .navbar-default .navbar-toggle.collapsed .icon-bar{
-    float:clear;
+  float:clear;
 }
 
 .sns-icon{
@@ -625,7 +592,7 @@ height:400px;
 .search-title{
 text-align:center;
   margin:0 auto;
-  }
+}
 
 .album{
   width:100%;
@@ -634,49 +601,38 @@ text-align:center;
 }
 
  #q{
- width:355px;
+  width:355px;
  }
 .footer-top{
   display:none;
 }
  #r{
- float:right;
+  float:right;
  }
  .concept{
- text-align:center;
- padding:0 30px;
+  text-align:center;
+  padding:0 30px;
   height:100%;
-
  }
-
  .search-1{
- text-align:center;
- height:100%;
- padding-bottom:30px;
+  text-align:center;
+  height:100%;
+  padding-bottom:30px;
  }
-
 .search-2{
   padding-bottom:30px;
 }
-
-
 .search-3{
-   padding-bottom:30px;
+  padding-bottom:30px;
 }
 }
-
-
 
 .btn-1{
   margin-right:15px;
 }
-
-
 .button-top{
   margin-top:60px;
 }
-
-
 .fa-list-alt{
  font-size:30px;
  padding:25px;
@@ -685,22 +641,17 @@ text-align:center;
 font-size:30px;
  padding:25px;
 }
-
 .fa-calendar{
   font-size:30px;
  padding:25px;
 }
-
-
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   background: none;
   color: #86D1E8;
 }
-
-
 .navbar-devise .navbar-brand{
-    color: #222222;
+  color: #222222;
 }
 
 // トップページのnavbarのドロップダウンがクリックされた時
@@ -717,62 +668,47 @@ font-size:30px;
 .row-space-left{
   margin-left:20px;
 }
-
 .row-space-top-1 {
   margin-top: 10px;
 }
-
 .row-space-top-2 {
   margin-top: 15px;
 }
-
 .row-space-top-3 {
   margin-top: 20px;
 }
-
 .row-space-top-4 {
   margin-top: 25px;
 }
-
 .row-space-0 {
   margin-bottom: 0px;
 }
 .row-space-1 {
   margin-bottom: 10px;
 }
-
 .row-space-2 {
   margin-bottom: 15px;
 }
-
-
 .row-space-4 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 .user-profile{
   margin-top:30px;
 }
-
 .vertifications{
   margin-top:100px;
 }
-
 .color-val{
   color:gray;
 }
-
 body{
-    color: #222;
+  color: #222;
 }
-
 .footer{
   width:100%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-
 #box {
   display: flex;
   align-items: center;
@@ -803,13 +739,10 @@ body{
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
-
-
 .music_people a{
   color:white;
   text-decoration:none;
 }
-
 @keyframes animatedgradient {
     0% {
         background-position: 0% 50%;
@@ -821,20 +754,15 @@ body{
         background-position: 0% 50%;
     }
 }
-
 .btn-regist{
   padding:30px 0;
 }
-
 .login-white{
   color:white;
 }
-
 .login-white a{
    text-decoration: none;
 }
-
-
 .bg-regist{
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url(ivent.jpg);
   background-size: cover;
@@ -845,7 +773,6 @@ body{
   color:white;
   margin-top:0px;
 }
-
 .bg-proedit{
   background: linear-gradient( rgba(0, 0, 0, 0.2),
   rgba(0, 0, 0, 0.05) ), url(yuka.jpg);
@@ -856,25 +783,20 @@ body{
   height:100%;
   margin-top:0px;
 }
-
 .proedit{
   background-color:transparent;
 }
-
 .navbar-devise{
   margin:0px;
 }
-
 .ivents-bg{
   background-color:#f6f6f6;
   height:100%;
 }
-
 .album {
   margin: auto;
   position: relative;
 }
-
 .album img {
   width: 100%;
   animation-name: album;
@@ -942,8 +864,7 @@ body{
 }
 
 .my-twitter{
-
-color: #1DA1F2;
+  color: #1DA1F2;
 }
 .my-facebook{
   color: #3B5998;
@@ -953,8 +874,4 @@ color: #1DA1F2;
   font-size:30px;
   margin-right:10px;
   color:f099;
-}
-
-.unti{
-  color:$satoshi;
 }
